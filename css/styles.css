@@ -150,8 +150,8 @@ ul {
     max-width: 496px;
     margin: 0 auto;
     text-align: center;
-    margin-top: 188px;
-    margin-bottom: 48px;
+    padding-top: 188px;
+    padding-bottom: 48px;
 }
 
 .hero-button {
