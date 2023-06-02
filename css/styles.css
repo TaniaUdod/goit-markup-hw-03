@@ -27,6 +27,10 @@ ul {
     padding-left: 0;
 }
 
+img {
+    display: block;
+}
+
 .link {
     text-decoration: none;
 }
@@ -86,6 +90,7 @@ ul {
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    margin-right: 76px;
 }
 
 .header-logo-span {
@@ -96,6 +101,10 @@ ul {
     display: flex;
     margin-right: 332px;
     gap: 40px;
+}
+
+.header-menu-item {
+    padding: 24px 0;
 }
 
 .header-menu-link {
@@ -134,10 +143,7 @@ ul {
 
 .hero {
     background-color: var(--primary-black-color);
-}
-
-.hero-container {
-    padding-bottom: 188px;
+    padding: 188px 0;
 }
 
 .hero-title {
@@ -150,7 +156,6 @@ ul {
     max-width: 496px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 188px;
     padding-bottom: 48px;
 }
 
@@ -163,11 +168,13 @@ ul {
     cursor: pointer;
     color: var(--background-color);
     background-color: var(--primary-logo-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 16px 32px;
     display: block;
     margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
 }
 
 .hero-button:hover,
@@ -178,8 +185,7 @@ ul {
 /* ----------------benefits---------------- */
 
 .benefits-container {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding: 120px 0;
 }
 
 .benefits-list {
@@ -197,7 +203,7 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--primary-black-color);
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .benefits-text {
@@ -210,7 +216,7 @@ ul {
 /* ----------------doing---------------- */
 
 .doing-container {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 
 .doing-title {
@@ -237,6 +243,7 @@ ul {
 
 .team {
     background-color: var(--primary-white-color);
+    padding: 120px 0;
 }
 
 .team-title {
@@ -247,28 +254,22 @@ ul {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--primary-black-color);
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .team-list {
     display: flex;
-    padding-bottom: 120px;
     gap: 24px;
 }
 
 .team-item {
     background-color: var(--background-color);
     width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-content {
     padding: 32px 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
 }
 
 .team-subtitle {
@@ -277,6 +278,8 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--primary-black-color);
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-text {
@@ -284,17 +287,14 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    text-align: center;
 }
 
 /* ----------------footer---------------- */
 
 .footer {
     background-color: var(--primary-black-color);
-}
-
-.footer-container {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 
 .footer-logo {
@@ -323,9 +323,9 @@ ul {
 
 /* ----------------portfolio---------------- */
 
-.portfolio-container {
-    margin-top: 96px;
-    margin-bottom: 72px;
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 
 .button-list {
@@ -333,6 +333,7 @@ ul {
     flex-direction: row;
     justify-content: center;
     gap: 24px;
+    margin-bottom: 72px;
 }
 
 .filter-button {
@@ -352,25 +353,27 @@ ul {
 .filter-button:focus {
     color: var(--background-color);
     background-color: #404BBF;
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 
 /* ----------------projects---------------- */
 
-.projects-container {
-    margin-bottom: 120px;
-}
-
 .projects-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 48px 24px;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.projects-item {
+    width: calc((100% - 48px) / 3);
 }
 
 .projects-content {
-    padding: 32px 0 32px 16px;
-    border-right: 1px solid var(--border-accent);
-    border-left: 1px solid var(--border-accent);
-    border-bottom: 1px solid var(--border-accent);
+    padding: 32px 16px;
+    border: 1px solid var(--border-accent);
+    border-top: none;
 }
 
 .projects-subtitle {
@@ -379,7 +382,7 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--primary-black-color);
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .projects-text {
