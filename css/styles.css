@@ -103,16 +103,13 @@ img {
     gap: 40px;
 }
 
-.header-menu-item {
-    padding: 24px 0;
-}
-
 .header-menu-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-black-color);
+    padding: 24px 0;
 }
 
 .header-menu-link:hover,
@@ -184,7 +181,7 @@ img {
 
 /* ----------------benefits---------------- */
 
-.benefits-container {
+.benefits {
     padding: 120px 0;
 }
 
@@ -215,7 +212,7 @@ img {
 
 /* ----------------doing---------------- */
 
-.doing-container {
+.doing {
     padding-bottom: 120px;
 }
 
